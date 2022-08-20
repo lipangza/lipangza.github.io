@@ -1,0 +1,134 @@
+/* 文章页小风车H1-H6图标样式效果 */
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+    -webkit-animation: ccc 1.6s linear infinite ;
+    animation: ccc 1.6s linear infinite ;
+}
+@-webkit-keyframes ccc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}
+@keyframes ccc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}
+
+
+
+
+/* 背景宇宙星光  */
+#universe{
+  display: block;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+
+
+
+
+/* 鼠标图标 */
+
+body {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/arrow.cur), auto;
+}
+
+
+/*a标签*/
+
+a:hover {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/link.cur), auto;
+}
+
+
+/*按钮*/
+
+button:hover {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/btn.cur), auto;
+}
+
+#rightside>div>button,
+#rightside>div>a {
+    display: block;
+    margin-bottom: 2px;
+    width: 30px;
+    height: 30px;
+    color: var(--btn-color);
+    text-align: center;
+    font-size: 16px;
+	border-radius: 12px;
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/arrow.cur), auto;
+}
+
+
+
+/*时钟*/
+#aside-content.aside-content > .sticky_layout > .card-widget.card-clock > .card-glass > .card-background {
+    background-color: unset ;
+    box-shadow: unset ;
+}
+
+
+
+/* 文章标签 */
+
+.layout_post .tag_share .post-meta__tags {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/btn.cur), auto;
+}
+
+
+/* 评论区 */
+
+.vcol * {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/input.cur), auto;
+}
+
+.v[data-class=v] .vicon {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/input.cur), auto;
+}
+
+.v[data-class=v] .vbtn {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/input.cur), auto;
+}
+
+/* 回复 */
+
+.vat {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/hf.cur), auto;
+}
+
+/*i标签*/
+
+i:hover {
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/link.cur),auto;
+}
+
+
+/*页脚a标签*/
+
+#footer-wrap a:hover {
+    text-decoration: none;
+    cursor: url(https://cdn.jsdelivr.net/npm/akilar-candyassets/cur/hf.cur), auto;
+}
+
