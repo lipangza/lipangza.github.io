@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>视频解析</title>
+		<meta name=viewport content="width=device-width,anicital-scale=1">
+		<link href="https://s0.pstatp.com/cdn/expire-1-M/twitter-bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+		<link href="https://s3.pstatp.com/cdn/expire-1-M/jquery-confirm/3.3.4/jquery-confirm.min.css" type="text/css" rel="stylesheet" />
+		<link rel="icon" href="https://q1.qlogo.cn/g?b=qq&amp;nk=2875997232&amp;s=640">
+		<link rel="stylesheet" href="media/css/style_new.css">
+	</head>
+	<body>
+		
+		<div class='play-box' id='play-box'>
+			<div style='padding:5px 10px;'>
+				<!-- PC端 -->	
+				<div class="hidden-xs">	
+					<div style='font-size:13px; text-align:center; font-size:20px; color:red'><b>「VIP视频解析」</b>&nbsp;&nbsp; 
+	
+					</div>
+				</div>
+				<!-- 移动端 -->
+				<div class="visible-xs">
+					<div style='font-size:13px; text-align:center; font-size:20px; color:red'><b>「VIP视频解析」</b>&nbsp;&nbsp;
+							
+					</div>
+				</div>
+			</div>
+
+
+			<iframe id="palyer-iframe" src="https://vip.parwix.com:4433/player/?url=https://www.iqiyi.com/v_muxllail7s.html" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" allowtransparency="true" name='jx_play' ></iframe>
+			
+			<div class="operation">
+				<!-- 移动端显示 -->
+				<div class="visible-xs mobile-input">					
+					<input type="text" value="" id="film-play-url-mobile" class="form-control text-control" aria-label="Text input with segmented button dropdown" placeholder="请输入爱奇艺、腾讯视频、哔哩哔哩等视频播放链接"/>				
+				</div>
+				<div class="input-group">
+					<!-- PC端显示 -->
+					<input type="text" value="" id="film-play-url" class="hidden-xs form-control text-control" aria-label="Text input with segmented button dropdown" placeholder="请输入爱奇艺、腾讯视频、哔哩哔哩等视频播放链接"/>
+					<div class="input-group-addon">
+						<select class="input-group select-control text-control" id="link-choice">
+
+
+
+								<option value="https://vip.parwix.com:4433/player/?url=" selected="selected">
+									快速接口
+								</option>
+							
+								<option value="https://z1.m1907.cn/?jx=" >
+									纯净接口
+								</option>
+							
+								<option value="https://vip.parwix.com:4433/player/?url=" selected="selected">
+									综合/B站
+								</option>
+							
+								<option value="https://jsap.attakids.com/?url=" >
+									快速接口:百度
+								</option>
+							
+								<option value="https://www.cuan.la/m3u8.php?url=" >
+									B站解析:Mao
+								</option>
+							
+								<option value="https://www.ckplayer.vip/jiexi/?url=" >
+									接口:Ckplayer
+								</option>
+							
+								<option value="https://api.leduotv.com/wp-api/ifr.php?isDp=1&vid=" >
+									接口:乐多资源
+								</option>
+							
+								<option value="https://ckmov.ccyjjd.com/ckmov/?url=" >
+									接口:ccyjjd
+								</option>
+							
+								<option value="https://jx.m3u8.tv/jiexi/?url=" >
+									接口:M3U8
+								</option>
+							
+								<option value="https://vip.bljiex.com/?v=" >
+									接口:BL
+								</option>
+							
+								<option value="https://qd.hxys.tv/m3u8.php?url=" >
+									接口:Mao解析
+								</option>
+							
+								<option value="https://www.pangujiexi.cc/jiexi.php?url=" >
+									接口:盘古
+								</option>
+							
+								<option value="https://www.ssamao.com/jx/?url=" >
+									接口:SSAMAO
+								</option>
+							
+								<option value="https://da.wujiys.com/?url=" >
+									接口:无极
+								</option>
+							
+								<option value="https://jx.618g.com/?url=" >
+									接口:618G
+								</option>
+							
+								<option value="https://www.ckmov.vip/api.php?url=" >
+									接口:ckmov 
+								</option>
+							
+								<option value="https://123.1dior.cn/?url=" >
+									接口:迪奥
+								</option>
+							
+								<option value="https://jx.popo520.cn/jiexi/?url=" >
+									接口:福星
+								</option>
+							
+								<option value="https://jx.rdhk.net/?v=" >
+									接口:RDHK 
+								</option>
+							
+								<option value="https://www.h8jx.com/jiexi.php?url=" >
+									接口:H8
+								</option>
+							
+								<option value="https://api.jiexi.la/?url=" >
+									接口:解析la
+								</option>
+							
+								<option value="https://jx.jiubojx.com/vip.php?url=" >
+									接口:久播
+								</option>
+							
+								<option value="https://jx.youyitv.com/?url=" >
+									接口:九八
+								</option>
+							
+								<option value="https://vip.laobandq.com/jiexi.php?url=" >
+									接口:老板
+								</option>
+							
+								<option value="https://jx.hao-zsj.cn/vip/?url=" >
+									接口:乐喵
+								</option>
+							
+								<option value="https://jiexi.janan.net/jiexi/?url=" >
+									接口:MUTV
+								</option>
+							
+								<option value="https://jx.yingxiangbao.cn/vip.php?url=" >
+									接口:明日
+								</option>
+							
+								<option value="https://jx.wzslw.cn/?url=" >
+									接口:磨菇
+								</option>
+							
+								<option value="https://okjx.cc/?url=" >
+									接口:OK
+								</option>
+							
+								<option value="https://jx.ivito.cn/?url=" >
+									接口:维多
+								</option>
+							
+								<option value="https://www.kpezp.cn/jlexi.php?url=" >
+									接口:小蒋
+								</option>
+							
+								<option value="https://jx.yaohuaxuan.com/?url=" >
+									接口:小狼
+								</option>
+							
+								<option value="https://vip.kurumit3.top/?v=" >
+									接口:智能
+								</option>
+							
+								<option value="https://vip.cjys.top/?url=" >
+									接口:星驰
+								</option>
+							
+								<option value="http://60jx.com/?url=" >
+									接口:星空
+								</option>
+							
+								<option value="https://api.yueliangjx.com/?url=" >
+									接口:月亮
+								</option>
+							
+								<option value="https://go.yh0523.cn/y.cy?url=" >
+									接口:0523
+								</option>
+							
+								<option value="https://jx.ergan.top/?url=" >
+									接口:云端
+								</option>
+							
+								<option value="https://jx.yparse.com/index.php?url=" >
+									接口:云析
+								</option>
+							
+								<option value="https://www.1717yun.com/jx/ty.php?url=" >
+									接口:17云
+								</option>
+							
+								<option value="https://api.3jx.top/vip/?url=" >
+									接口:66
+								</option>
+							
+								<option value="https://jx.116kan.com/?url=" >
+									接口:116
+								</option>
+							
+								<option value="https://vip.66parse.club/?url=" >
+									接口:200
+								</option>
+							
+								<option value="https://www.8090g.cn/?url=" >
+									接口:8090
+								</option>		
+
+							
+						</select>
+					</div>
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default btn-play" title="施加魔法" id="play-btn">解析播放</button>
+					</div>
+				</div>
+				
+
+				<div class="player-url-tips">
+					<div><b>主流视频播放平台：</b>
+						<a href="https://www.iqiyi.com/" rel="noreferrer nofollow" target="_blank">爱奇艺<a>、
+						<a href="https://v.qq.com/" rel="noreferrer nofollow" target="_blank">腾讯视频<a>、
+						<a href="https://www.youku.com/" rel="noreferrer nofollow" target="_blank">优酷<a>、
+						<a href="https://www.mgtv.com/" rel="noreferrer nofollow" target="_blank">芒果TV<a>、
+						<a href="http://www.le.com/" rel="noreferrer nofollow" target="_blank">乐视<a>、
+						<a href="https://www.bilibili.com/" rel="noreferrer nofollow" target="_blank">bilibili<a>、
+						<a href="https://www.acfun.cn/" rel="noreferrer nofollow" target="_blank">acfun<a>、
+						<a href="https://www.youtube.com/" rel="noreferrer nofollow" target="_blank">youtube<a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="media/js/jquery.min.js"></script>
+	<script src="media/js/vip_analysis_common.js"></script>
+	<script src="media/js/vip_analysis.js"></script>
+
+	
+
+	</body>
+</html>

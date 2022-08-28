@@ -1,0 +1,73 @@
+body{background:#000} 
+
+.ql-snow img {
+	max-width: 100%
+}
+.ql-editor {
+	position: relative;
+	font-size: 20px;
+	line-height: 2;
+	outline: 0;
+	tab-size: 4;
+	-moz-tab-size: 4;
+	text-align: center;
+	
+	word-wrap: break-word;
+	max-width: 750px;
+	margin: 30px auto 0;
+	padding: 25px;
+	color: #FFFFFF;
+}
+	
+
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 140vw;
+	height: 100vh
+}
+	
+
+
+
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+	
+	
+	
+	
+	
+
+.container {
+    position: relative;
+ 
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    height: 100px;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0px
+}
+.footer {
+        text-align: center
+}
+.footer h3 {
+
+
+    font-weight:bold;
+    font-size: 20px;
+    letter-spacing: .8em;
+    margin: 6px 0;
+		color: #ffffff;
+}
+.footer p {
+	font-size: 18px;
+	letter-spacing: 1em;
+    opacity: .3;
+	color: #ffffff;-+
+}
